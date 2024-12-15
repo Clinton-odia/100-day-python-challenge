@@ -1,0 +1,1 @@
+clinton_fav_number = 62
