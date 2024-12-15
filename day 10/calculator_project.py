@@ -16,3 +16,5 @@ calc = {
   "*": multiply,
   "/": divide,
 }
+
+print(calc['*'](4,8))
