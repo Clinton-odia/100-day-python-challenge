@@ -10,9 +10,16 @@ from prettytable import PrettyTable
 # print(my_screen.canvheight)
 # my_screen.exitonclick()
 
-table = PrettyTable()
-table.add_column("Pokemon Name", ["pikachu", "squirte","charmander"])
-table.add_column("Type", ["Electric", "Water", "Fire"])
-table.align = 'l'
+# table = PrettyTable()
+# table.add_column("Pokemon Name", ["pikachu", "squirte","charmander"])
+# table.add_column("Type", ["Electric", "Water", "Fire"])
+# table.align = 'l'
 
-print(table)
+# print(table)
+class person:
+  def __init__(self, sex, age):
+    self.sex = sex
+    self.age = age
+
+newperson = person("male",25)
+print(newperson.sex)
