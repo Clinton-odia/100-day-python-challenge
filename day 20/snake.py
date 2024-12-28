@@ -33,7 +33,15 @@ class Snake:
       segment.goto(x=self.x_pos, y= 0)
       self.x_pos -= 20
       self.segments.append(segment)
-  
+      self.head = self.segments[0]
+  def add_segment(self):
+        """Adds a new segment to the snake at the last segment's position."""
+        new_segment = Turtle("square")
+        new_segment.color("white")
+        new_segment.penup()
+        last_segment = self.segments[-1]
+        new_segment.goto(last_segment.xcor(), last_segment.ycor())
+        self.segments.append(new_segment)
   def move(self):
     global current_direction
     for seg_num in range(len(self.segments)-1, 0, -1):
