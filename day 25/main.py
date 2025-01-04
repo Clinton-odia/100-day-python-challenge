@@ -17,6 +17,6 @@
 
 import pandas
 
-data = pandas.read_csv("day 25\weather_data.csv")
-temp_list =(data[data.temp == data["temp"].max()])
-print(temp_list)
+# data = pandas.read_csv("day 25\weather_data.csv")
+# temp_list =(data[data.temp == data["temp"].max()])
+# print(temp_list)
