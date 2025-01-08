@@ -33,5 +33,6 @@ while len(gussed_states) < 50:
     t.write(answer_state)
 
 
+
 #state_to_learn.csv
 turtle.mainloop()
